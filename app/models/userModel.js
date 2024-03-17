@@ -24,12 +24,12 @@ const userSchema = mongoose.Schema({
     },
     groups: [{
         groupId: {
-            type: String
+            type: mongoose.Schema.Types.ObjectId
         }
     }],
     following: [{
         userId: {
-            type: String
+            type: mongoose.Schema.Types.ObjectId
         }
     }],
     created: {
