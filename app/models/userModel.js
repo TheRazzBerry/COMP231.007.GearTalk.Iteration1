@@ -32,6 +32,16 @@ const userSchema = mongoose.Schema({
             type: mongoose.Schema.Types.ObjectId
         }
     }],
+    followers: [{
+        userId: {
+            type: mongoose.Schema.Types.ObjectId
+        }
+    }],
+    likes: [{
+        postId: {
+            type: mongoose.Schema.Types.ObjectId
+        }
+    }],
     created: {
         type: Date,
         default: Date.now,
