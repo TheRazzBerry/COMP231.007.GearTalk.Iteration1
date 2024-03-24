@@ -12,7 +12,7 @@ let authController = require('../controllers/authController');
 router.param('id', userController.find);
 
 // Define Basic Routes
-router.get('/', (req, res, next) => { res.json({ message: 'users.js root' }) });
+router.get('/', (req, res, next) => { res.json({ message: 'users.js root' }); });
 router.get('/find', userController.list);
 router.post('/signup', userController.create);
 
