@@ -19,6 +19,7 @@ router.post('/signup', userController.create);
 // Define Authorized Routes
 router.get('/find/:id', userController.read);
 router.post('/signin', authController.signin);
+router.get('/find', authController.requireSignIn, userController.list);
 router.put('/update/:id',
     authController.requireSignIn,
     authController.hasAuth,
