@@ -1,5 +1,5 @@
 {
-    "name": "geartalk.app",
+    "name": "geartalk.app.backend",
     "version": "0.1.0",
     "description": "Social media application for car enthusiasts",
     "main": "server.js",
